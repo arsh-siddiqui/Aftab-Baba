@@ -517,30 +517,6 @@ address { font-style: normal; }
   display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
 }
 
-/* Scroll cue */
-.hero-scroll-cue {
-  position: absolute; bottom: 40px; left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--text-3);
-}
-.scroll-wheel {
-  width: 22px; height: 36px;
-  border: 1.5px solid currentColor; border-radius: 12px;
-  display: flex; justify-content: center; align-items: flex-start;
-  padding-top: 5px;
-}
-.scroll-dot {
-  width: 4px; height: 4px; border-radius: 50%;
-  background: currentColor;
-  animation: scroll-bounce 2s infinite;
-}
-@keyframes scroll-bounce {
-  0%,100% { transform: translateY(0); opacity: 1; }
-  60%      { transform: translateY(12px); opacity: 0.3; }
-}
 
 /* ════════════════════════════════════════════════
    STATS
